@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Lab 6</title>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <h2>Javascript Calculator</h2>
+    
+    <script>
+      
+            var firstNum, secondNum, result, temp;
+            function fun()
+            {
+              firstNum = parseInt(document.getElementById("one").value);
+              numTwo = parseInt(document.getElementById("two").value);
+              if(firstNum && numTwo)
+              {
+                temp = document.getElementById("res");
+                temp.style.display = "block";
+                res = firstNum + numTwo;
+                document.getElementById("add").value = res;
+                res = firstNum * numTwo;
+                document.getElementById("multiply").value = res;
+                res = firstNum / numTwo;
+                document.getElementById("divide").value = res;
+                res = firstNum - numTwo;
+                document.getElementById("subtract").value = res;
+              }
+            }
+            </script>
+            </head>
+            <body>
+            
+            <b><p id="input">a: <input id="one">
+            <br/><br/>
+            b: <input id="two"></p>
+            <p><button onclick="fun()">Sum,  Product, Division, Subtraction</button></p>
+            <p id="res" style="display:none;">
+            Sum = <input id="add"><br/><br/>
+            Product = <input id="multiply"><br/><br/>
+            Division = <input id="divide"><br/><br/>
+            Subtraction = <input id="subtract"><br/><br/></p></b>
+            
+            </body>
+            <body>
+            <h1>Task 2: JS Alert</h1>
+            <button onclick="myFunction()">click here to show confirm alert</button>
+
+            <script>
+              function myFunction() {
+                alert ("Js Alert");
+              }
+            </script>
+            </body>
+
+            <h1>Task3: Min and Max </h1>
+<script>
+function Min_Max(){
+  var numOne, numTwo, numThree, numFour, numFive, sum;
+  one = parseInt(document.getElementById("first").value);
+  two = parseInt(document.getElementById("second").value);
+  three = parseInt(document.getElementById("third").value);
+  four = parseInt(document.getElementById("fourth").value);
+  five = parseInt(document.getElementById("fifth").value);
+  let a = Math.max(one, two, three, four, five);
+  let b = Math.min(one, two, three, four, five);
+  const random = [one, two, three, four, five];
+  var index = Math.floor(Math.random() *random.length);
+  c = random[index];
+  document.getElementById("answer").value = a;
+  document.getElementById("minimum").value = b;
+  document.getElementById("maximum").value = c;
+}
+
+ 
+</script>
+
+<body>
+    <p>a. <input id="first"></p>
+    <p>b. <input id="second"></p>
+    <p>c. <input id="third"></p>
+    <p>d. <input id="fourth"></p>
+    <p>e. <input id="fifth"></p>
+    <p>MAX <input id="answer"></p>
+    <p>MIN <input id="minimum"></p>
+    <p>Random <input id="maximum"></p>
+    <button onclick="Min_Max()">Find</button>
+    
+</body>
+
+<h1>Task4: Paragraph Formatting</h1>
+<body>
+<p>"Lorem Ipsum is simply dummy text ofthe printing and typesetting industry. <script>
+var str = new String("Lorem Ipsum has been the industry'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.");
+document.write(str.bold());
+</script>
+It has survived not only five centuries but also the leap into electronic typeseting, remaining essentially <b>UNCHANGED.</b>It was popularised in the <b>1960s</b>with the release of <b>LETRASET</b> sheets containing Lorem Ipsum passages, and <script>
+  var str = new String("more recently with desktop");
+  document.write(str.strike());
+  </script> publishing software like Adlus <script> var str = new String("PageMaker");
+  document.write(str.link());</script> including versions of <script> var str = new String("Lorem Ipsum");
+  document.write(str.italics());</script>
+  </p>
+
+
+
+
+</p>
+
+
+
+
+            </html>
+
+
+
+    
+    
+
